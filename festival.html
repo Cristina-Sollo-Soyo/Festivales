@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../SunriseFest/festival.css" />
+    <title>SunriseFest</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="Festival, Musica, Fiesta, Entradas" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../SunriseFest/media/imagen/logosun.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="festival.html">
+        <img
+          src="../SunriseFest/media/imagen/logosun.png"
+          alt="Logo Sol"
+          class="header__imagen"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__lista">
+          <a href="#" class="header__linkLista"
+            ><li class="header__elementolista">Inicio</li></a
+          >
+          <a href="#" class="header__linkLista"
+            ><li class="header__elementolista">Entrada</li></a
+          >
+          <a href="#" class="header__linkLista"
+            ><li class="header__elementolista">Festivales</li></a
+          >
+          <li class="header__elementolista header__elementolista--desaparece"><button type="button" class="header__botonLista"><i class="fa-solid fa-bars"></i></button></li><!--la etiqueta i es para el icono del menu hamburguesa, es copia y pega de la pagina iconos-->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="seccionVideo">
+        <video muted loop autoplay class="seccionVideo__video">
+          <source
+            src="../SunriseFest/media/video/escenario.mp4"
+            type="video/mp4"
+          />
+          Tu navegador no soporta este video
+        </video>
+        <div class="seccionVideo__contenido">
+          <h1 class="seccionVideo__titulo">SunriseFest</h1>
+          <h2 class="seccionVideo__subtitulo">Hasta el amanecer</h2>
+          <form action="#" method="get">
+            <!--esto es la barra del buscador-->
+            <input
+              type="text"
+              name="buscar"
+              id="search"
+              placeholder="Buscador"
+              class="seccionVideo__buscador"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="textoImagen">
+        <article class="textoImagen__izquierda">
+          <p class="textoImagen__titulo">Un poco de nuestra historia</p>
+          <div class="textoImagen__contenedorTexto">
+            <p class="textoImagen__historia">
+              Nuestra pasión por la música y los festivales nos ha hecho crear
+              esta página para ayudar a todo el mundo a encontrar un festival a
+              su gusto
+            </p>
+            <button type="button" class="textoImagen__button">Saber mas</button>
+          </div>
+        </article>
+        <img
+          src="../SunriseFest/media/imagen/festichicos.jpg"
+          alt="Gente en un festival"
+          class="textoImagen__imagen"
+        />
+      </section>
+      <section class="seccionFestivales">
+        <p class="seccionFestivales__titulo">Algunos de nuestros géneros</p>
+        <div class="seccionFestivales__generos">
+          <!--aqui iria todas las cartas-->
+          <article class="seccionFestivales__card">
+            <img
+              src="../SunriseFest/media/imagen/rock.jpg"
+              alt="Rock"
+              class="seccionFestivales__cardImagen"
+            />
+            <div class="seccionFestivales__contenedorCard">
+              <p class="seccionFestivales__cardTexto">Rock</p>
+              <button type="button" class="seccionFestivales__cardButton">
+                Ver Festivales
+              </button>
+            </div>
+          </article>
+          <article class="seccionFestivales__card">
+            <img
+              src="../SunriseFest/media/imagen/rock.jpg"
+              alt="Rock"
+              class="seccionFestivales__cardImagen"
+            />
+            <div class="seccionFestivales__contenedorCard">
+              <p class="seccionFestivales__cardTexto">Metal</p>
+              <button type="button" class="seccionFestivales__cardButton">
+                Ver Festivales
+              </button>
+            </div>
+          </article>
+          <article class="seccionFestivales__card">
+            <img
+              src="../SunriseFest/media/imagen/rock.jpg"
+              alt="Rock"
+              class="seccionFestivales__cardImagen"
+            />
+            <div class="seccionFestivales__contenedorCard">
+              <p class="seccionFestivales__cardTexto">Reggaeton</p>
+              <button type="button" class="seccionFestivales__cardButton">
+                Ver Festivales
+              </button>
+            </div>
+          </article>
+          <article class="seccionFestivales__card">
+            <img
+              src="../SunriseFest/media/imagen/rock.jpg"
+              alt="Rock"
+              class="seccionFestivales__cardImagen"
+            />
+            <div class="seccionFestivales__contenedorCard">
+              <p class="seccionFestivales__cardTexto">Rap</p>
+              <button type="button" class="seccionFestivales__cardButton">
+                Ver Festivales
+              </button>
+            </div>
+          </article>
+          <article class="seccionFestivales__card">
+            <img
+              src="../SunriseFest/media/imagen/rock.jpg"
+              alt="Rock"
+              class="seccionFestivales__cardImagen"
+            />
+            <div class="seccionFestivales__contenedorCard">
+              <p class="seccionFestivales__cardTexto">Flamenco</p>
+              <button type="button" class="seccionFestivales__cardButton">
+                Ver Festivales
+              </button>
+            </div>
+          </article>
+          <article class="seccionFestivales__card">
+            <img
+              src="../SunriseFest/media/imagen/rock.jpg"
+              alt="Rock"
+              class="seccionFestivales__cardImagen"
+            />
+            <div class="seccionFestivales__contenedorCard">
+              <p class="seccionFestivales__cardTexto">Cumbia</p>
+              <button type="button" class="seccionFestivales__cardButton">
+                Ver Festivales
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
