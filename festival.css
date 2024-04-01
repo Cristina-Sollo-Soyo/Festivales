@@ -1,0 +1,259 @@
+@font-face{
+    font-family: Oswald;
+    src: url('../SunriseFest/media/fuente/Oswald-VariableFont_wght.ttf')
+}
+@font-face{
+    font-family: Jost;
+    src: url('../SunriseFest/media/fuente/Jost-Italic-VariableFont_wght.ttf');
+}
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cinnabar: #ea4124ff;
+--persian-orange: rgba(232, 137, 64, 0.679);
+--hunyadi-yellow: #e7ac4eff;
+--arylide-yellow: #e6cf5bff;
+--straw: #d9d445ff;
+--pear: #d2d73aff;
+--pear-2: #cbd92fff;
+--titulos:3rem;
+ }
+
+ 
+
+.header__imagen{
+    width: 5rem;
+    height: 3rem;
+    margin: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between; /*centramos los elementos, cada uno a una esquina*/
+    font-family: Oswald;
+    flex-wrap: wrap;
+    background-color: var(--persian-orange); /*aqui elegimos uno de los colores de la paleta de colores elegida*/
+    position: fixed; /*aqui le decimos que queresmo que el header nos acompañe, se quede fijo*/
+    width: 100%;/* que ocupe toda la pantalla*/
+    z-index: 2; /*esto es para que el header se ponga por delante de la imagen*/
+    top: 0;/*esto para que no quede un hueco de video arriba feo */
+    backdrop-filter: blur(.1rem);/*con esta funcion se difumina lo que pase por detras del header*/
+}
+
+.header__botonLista{ /*esto es el menu hamburg, aqui lo ajustamos*/
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-family: Jost;
+    font-size: 1.3rem;
+}
+/*
+@media screen and (max-width:768px){ /*aqui muuuuuucho cuidado y poner la estructura tal cual, con los espacios. si no no funciona*/
+  /*  .header{
+        justify-content: center; /*para que se ajuste el menu al movil*/
+       /* padding: 0 0 0.5rem 0;*/
+    /*}
+/*}*/
+
+.header__lista{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /*qjitamos los puntos de la lista*/
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width:768px){
+    .header__nav{
+        width: 100%;
+        justify-content: center;
+    } 
+}
+
+.header__elementolista{
+    padding: 0 2rem; /*con esto separamos los elementos de la lista*/
+}
+
+.header__linkLista{
+    text-decoration: none;
+    color: white;
+}
+
+.header__elementolista--desaparece{
+    display: none;
+}
+@media screen and (max-width: 768px) { /*esto es ppara que cuando veamos en pantalla movil el menu se cambie y desaparezca las palabras y salga el menu hamburguesa*/
+    .header__elementolista{
+        display: none;
+    }    
+    .header__elementolista--desaparece{
+        display: block;
+    }
+}
+
+.seccionVideo__video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(20%);/*con esto le quitamos el brillo al video*/
+}
+
+.seccionVideo{
+    height: 100vh;
+    width: 100%;
+}
+
+.seccionVideo__contenido{
+    position: relative;
+    z-index: 1; /*para que el buscador este por encima del video */
+    display: flex;
+    flex-direction: column; /*si no ponemos colum se nos pone enhorizontal*/
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* la medida de vh solo va con el height*/
+}
+
+.seccionVideo__titulo{
+    font-family: Jost;
+    color: white;
+    font-size: 5rem;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .seccionVideo__titulo{
+        font-size: 3.5rem;
+    }
+}
+
+.seccionVideo__subtitulo{
+    font-family: Jost;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.seccionVideo__buscador{
+    border: 0;
+    width: 20rem;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+/*SECCION DE DOS TEXTOS E IMAGEN*/ 
+
+.textoImagen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 0.5rem;/*estp es para entre las columnas y filas haya espacio*/
+    align-items: center; /*esto  para centrar el texto a la altura de la mitad de la imagen*/
+    font-family: Jost;
+    background-color: var(--hunyadi-yellow);
+
+}
+@media screen and (max-width: 800px) {
+    .textoImagen{
+        grid-template-columns: 1fr;
+    }
+}
+
+.textoImagen__imagen{
+    width: 75%;
+    height: 85vh;
+    border-radius: 1rem;
+}
+
+.textoImagen__izquierda{
+    margin: 0 1rem;
+}
+
+.textoImagen__titulo{
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.textoImagen_historia{
+    font-size: 1.5rem;
+}
+
+.textoImagen__button{
+    outline: none;
+    border: none;
+    background-color: var(--pear);
+    border-radius: 1rem;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}
+
+.textoImagen__button:hover{
+    background-color: var(--persian-orange);
+}
+
+.seccionFestivales__card{
+    border: 2px dashed black;
+    margin: 1rem;
+}
+
+.seccionFestivales__cardImagen{
+    width: 100%;
+}
+
+.seccionFestivales__contenedorCard{
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.seccionFestivales__cardButton{
+    border: none;
+    outline: none;
+    background-color: var(--pear-2);
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.seccionFestivales__cardButton:hover{
+    background-color: var(--persian-orange);
+}
+
+.seccionFestivales__cardTexto{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Jost;
+}
+
+.seccionFestivales__generos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 992px) { /*para tablet que haya dos columnas*/
+    .seccionFestivales__generos {
+        grid-template-columns: 1fr 1fr;
+    }
+}   
+@media screen and (max-width: 768px) { /*para moviles que haya dos columnas*/
+    .seccionFestivales__generos {
+        grid-template-columns: 1fr ;
+    }
+}
+
+.seccionFestivales__titulo{
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: Jost;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+}
